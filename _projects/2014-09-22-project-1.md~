@@ -13,7 +13,7 @@ M. Faessler, E. Mueggler, K. Schwabe, D. Scaramuzza: A Monocular Pose Estimation
 This involved a few major steps:
 
 1. Using the ROS camera calibration package to calibrate the webcam you are given
-2. Following the documentation for the RPG Monocular Pose Estimator package to try and getting the package running
+2. Following the documentation for the package to try and getting the package running
 3. Building some sort of 3D holder for your LEDs and calculate the transforms between them
 4. Building a circuit for powering the LEDs
 5. Fine-tuning parameters of the tracking algorithm
