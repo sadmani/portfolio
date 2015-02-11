@@ -1,0 +1,20 @@
+---
+layout: project
+title: RPG Monocular Pose Estimator Package Tutorial
+date: November 7, 2014
+image: lifecam_mono.png
+---
+
+## Overview
+The goal of this project was to develop a tutorial for using the RPG Monocular Pose Estimator ROS package that was developed based on the following paper:
+
+M. Faessler, E. Mueggler, K. Schwabe, D. Scaramuzza: A Monocular Pose Estimation System based on Infrared LEDs. IEEE International Conference on Robotics and Automation (ICRA), Hong Kong, 2014.
+
+This involved a few major steps:
+
+1. Using the ROS camera calibration package to calibrate the webcam you are given
+2. Following the documentation for the package to try and getting the package running
+3. Building some sort of 3D holder for your LEDs and calculate the transforms between them
+4. Building a circuit for powering the LEDs
+5. Fine-tuning parameters of the tracking algorithm
+6. Building a ROS package to run a demo involving the control of the turtlesim using this package
