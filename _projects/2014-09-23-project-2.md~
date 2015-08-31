@@ -8,13 +8,21 @@ image: baxter2image1.png
 ## Overview
 The goal of this project was to use the Baxter robot (research model) by [Rethink Robotics](http://www.rethinkrobotics.com/) to fill stockings for the MSR 2015 cohort- just in time for the Holidays! This project involved using ROS and Python to use the inverse kinematics server by Rethink, as well as perform tag tracking and object recognition tasks.
 
+To fit this project into our two week final project timeframe, our team of four started small by placing four different colored blocks on a table in front of baxter, with stockings labelled with tags hanging to the left of Baxter; we had ideas for extensions to add to this base level as we accomplished tasks. The full overview of the project can be seen on Github using this [link](https://github.com/ChuChuIgbokwe/ME495-Final-Project-Baxter-Stocking-Stuffer).
+
 ###Major steps involved:
 
-1. Identification of the stocking (whose stocking is it and where is it located?)
-2. Identification of the present associated with that stocking (which present belongs to that person?)
-3. Search for the present amongst others on a table (can Baxter appropriately distinguish this present amongst others?)
-4. Go back to the initial scanned stocking and release the present into it (can Baxter remember how to get to that "home" position?)
+1. Scanning and identification of next stocking in line:
+..*Point the camera in Baxter's left hand at the board on which the stockings hang and search the area
+..*Using a tag tracking ROS package, identify each stocking and find the first one classified as empty, storing the location of stocking and identifying the present associated with it
 
-*For more information on this project, go to the project page using this [link](https://github.com/ChuChuIgbokwe/ME495-Final-Project-Baxter-Stocking-Stuffer)
+2. Scanning for present on the table
+..*Using OpenCV with ROS, scan the table using the hand camera and locate the correct present color associated with the target present identified in step 1
 
+3. Grasp the present and go back to the location stored previously
 
+4. Release the present into it (can Baxter remember how to get to that "home" position?)
+
+5. Update the filled stockings list
+
+6. Repeat steps 1-5 for the number of stockings hung
