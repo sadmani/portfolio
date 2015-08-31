@@ -2,7 +2,7 @@
 layout: about
 path: /about
 url: index.html
-image: baxter2image1.png
+image: http://i882.photobucket.com/albums/ac22/sadmani/2015-08-31%2011.13.55_zpsx6zwpogl.jpg
 ---
 
 ## Education
