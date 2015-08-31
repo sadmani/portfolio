@@ -7,14 +7,14 @@ image: http://i882.photobucket.com/albums/ac22/sadmani/2015-08-31%2011.13.55_zps
 
 ## Overview
 
-[![alt text](http://i882.photobucket.com/albums/ac22/sadmani/2015-08-31%2011.12.52_zpsuigfrudl.jpg)](https://vimeo.com/137880504)
+![alt text](http://i882.photobucket.com/albums/ac22/sadmani/2015-08-31%2011.12.52_zpsuigfrudl.jpg)
 
 
 The goal of this project is create a prototype for a device that is portable and can measure the center of pressure of each foot throughout the gait cycle. Center of pressure (CoP) tells you where the ground reaction force vector is applied; the center of pressure is especially important for biomechanical applications because it can provide important information about posture and gait. CoP changes throughout the gait cycle, starting off at the heel during heel strike moving along the foot and ending at the toes during toe-off.
 
 Contemporary methods for measuring the center of pressure are very expensive, bulky, and not robust. Throughout the summer with the aim of alleviating those issues. Though I did not get a chance to research a different avenue of this project that would be much less bulky and potentially more robust, it is still something that I wish to do further research and development on. The current prototype was developed by extracting sensors from an old bathroom scale, designing a circuit that would amplify the signal while protecting from environmental noise, center of pressure calculations, and a way to visualize this data for further analysis using serial communcation between Matlab and the PIC32.
 
-Click on the picture above for a short demo video!
+Click on this [link](https://vimeo.com/137880504) for a short demo video!
 
 ###Project requirements:
 
