@@ -94,9 +94,9 @@ Contemporary methods for measuring the center of pressure are very expensive, bu
 
 	After the voltage values are obtained from each of the strain gauges and converted to corresponding weights, I used the calculations below to calculate the x and y coordinate values for CoP. I tried this prototype with 3 sensors (arranged in an isosceles triangle) and 4 sensors, with 4 giving better results.
 
-x = xmax*((F2 + F3)/FL)	
+	x = xmax*((F2 + F3)/FL)	
 
-y = ymax*((F4 + F3)/FL)
+	y = ymax*((F4 + F3)/FL)
 
 
 6. Improve upon prototype:
