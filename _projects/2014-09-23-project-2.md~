@@ -6,23 +6,15 @@ image: baxter2image1.png
 ---
 
 ## Overview
-The goal of this project was to get the Baxter robot to stuff stockings for the MSR students. This involved a few major steps:
+The goal of this project was to use the Baxter robot (research model) by [Rethink Robotics](http://www.rethinkrobotics.com/) to fill stockings for the MSR 2015 cohort- just in time for the Holidays! This project involved using ROS and Python to use the inverse kinematics server by Rethink, as well as perform tag tracking and object recognition tasks.
+
+###Major steps involved:
 
 1. Identification of the stocking (whose stocking is it and where is it located?)
 2. Identification of the present associated with that stocking (which present belongs to that person?)
 3. Search for the present amongst others on a table (can Baxter appropriately distinguish this present amongst others?)
 4. Go back to the initial scanned stocking and release the present into it (can Baxter remember how to get to that "home" position?)
 
-### Topic 1
-His nemore audiam consequat ad, no augue choro assueverit mei. Zril offendit tincidunt ne quo. At commodo integre alienum sea, cu vocent fuisset suscipit nam. Eum ex tation omnesque adversarium,mutat autem putant te nam. Id vix facilis complectitur, vis vitae vivendo euripidis ea, fugit eirmod an vix.
+*For more information on this project, go to the project page using this [link](https://github.com/ChuChuIgbokwe/ME495-Final-Project-Baxter-Stocking-Stuffer)
 
-### Topic 2
-Ad case nemore equidem mea. Duo te iuvaret appetere appellantur, sint scaevola usu cu. Eum ne aeque ridens prompta. At legendos vulputate eos, pro illum iuvaret cu, ludus vituperata usu no.
 
-### Topic 3
-Mel magna discere in. Mea ea dicit homero perfecto. Eam nulla facete scribentur in. Vide volutpat laboramus est cu, usu cu impetus dignissim. Ex pro decore impetus. Ius nihil iisque deterruisset an, ex sanctus verterem his. Doming prompta insolens est ut.
-
-### Topic 4
-Quod etiam pri ea, habemus electram ea eos, propriae insolens ea qui. Pro no mollis vituperatoribus. Augue quando delicatissimi ex per, vel ea vidisse dolorem eleifend. Has te aliquid senserit, reque soleat sed ea. At bonorum facilisis disputando est, error tantas appetere nec te. Mel in nobis animal.
-
-*For more information on this project, go to the project page using this [link]: https://github.com/ChuChuIgbokwe/ME495-Final-Project-Baxter-Stocking-Stuffer

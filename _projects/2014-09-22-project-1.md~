@@ -8,7 +8,7 @@ image: lifecam_mono.png
 ## Overview
 The goal of this project was to develop a tutorial for using the RPG Monocular Pose Estimator ROS package that was developed based on the paper cited below. When used properly, the monocular pose estimator package can prove to be extremely useful in applications where detecting small changes in position accurately is essential.
 
-M. Faessler, E. Mueggler, K. Schwabe, D. Scaramuzza: A Monocular Pose Estimation System based on Infrared LEDs. IEEE International Conference on Robotics and Automation (ICRA), Hong Kong, 2014.
+M. Faessler, E. Mueggler, K. Schwabe, D. Scaramuzza: **A Monocular Pose Estimation System based on Infrared LEDs.** IEEE International Conference on Robotics and Automation (ICRA), Hong Kong, 2014.
 
 As an extension, we wanted to be able to detect changes in position of a device with IR LEDs mounted on it and use that data to control the movement of a turtle in the turtlesim package. 
 
@@ -20,5 +20,3 @@ As an extension, we wanted to be able to detect changes in position of a device 
 4. Building a circuit for powering the LEDs
 5. Fine-tuning parameters of the tracking algorithm
 6. Building a ROS package to run a demo involving the control of the turtlesim using this package
-
-
