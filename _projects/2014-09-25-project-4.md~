@@ -10,7 +10,7 @@ image: http://i882.photobucket.com/albums/ac22/sadmani/2015-08-31%2011.13.55_zps
 
 ## Overview
 
-![alt text](http://i882.photobucket.com/albums/ac22/sadmani/2015-08-31%2011.12.52_zpsuigfrudl.jpg)
+[![alt text](http://i882.photobucket.com/albums/ac22/sadmani/2015-08-31%2011.12.52_zpsuigfrudl.jpg)](https://vimeo.com/137880504)
 
 The goal of this project is create a prototype for a device that is portable and can measure the center of pressure of each foot throughout the gait cycle. Center of pressure (CoP) tells you where the ground reaction force vector is applied; the center of pressure is especially important for biomechanical applications because it can provide important information about posture and gait. CoP changes throughout the gait cycle, starting off at the heel during heel strike moving along the foot and ending at the toes during toe-off.
 
@@ -69,7 +69,7 @@ Click on this [link](https://vimeo.com/137880504) for a short demo video!
 	Wires were connected to a small board, which had a ribbon cable connector. The ribbon cable led out of the prototype and attached directly to the breadboard that contained the PIC32.
 
 
-4. **Design external circuitry that will help utilize signal from new sensors: **
+4. **Design external circuitry that will help utilize signal from new sensors:**
 
 	![alt text](http://i882.photobucket.com/albums/ac22/sadmani/circuit_explained_zpsf9jbl7cs.png "circuit explained")
 
