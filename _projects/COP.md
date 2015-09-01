@@ -131,7 +131,7 @@ Before I began designing, I needed to establish a list of requirements that this
 
 ###Conclusions:
 
-Though the device definitely has room for improvement, it does do a pretty good job of locating the center of pressure. The disadvantages to the current prototype was that I wasn't able to get it down to a less bulky device in the timeframe, but that's definitely something that I would like to continue on my own. Overall, the project was an incredible learning experience- thanks so much to Professor Peshkin, Nick Marchuk, and Jarvis Schultz for their continuous advice!!!
+Though the device definitely has room for improvement, it does relatively well at locating the center of pressure. I was not able to get it down to a less bulky device in the timeframe, but that is definitely something that I would like to continue on my own. Overall, the project was an incredible learning experience- thanks so much to Professor Peshkin, Nick Marchuk, and Jarvis Schultz for their continuous advice!!!
 
 
 ![alt text](http://i882.photobucket.com/albums/ac22/sadmani/evolution_of_designs_zpshokeajiw.png "Final Prototype Evolution")

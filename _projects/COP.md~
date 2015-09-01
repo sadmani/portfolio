@@ -89,7 +89,7 @@ Before I began designing, I needed to establish a list of requirements that this
 
 	* Low-Pass Filter:
 
-		I used the [NSCOPE as a DAQ](http://hades.mech.northwestern.edu/index.php/NScope) so I could collect data from the sensors and then do some digital signal processing in Matlab. In particular, I tried to determine what frequency the noise was at and build low pass and bandpass filters in Matlab to look at the data before and after the signal processing.
+		I used the [NSCOPE as a DAQ](http://hades.mech.northwestern.edu) so I could collect data from the sensors and then do some digital signal processing in Matlab. In particular, I tried to determine what frequency the noise was at and build low pass and bandpass filters in Matlab to look at the data before and after the signal processing.
 
 		In the end, I came to the conclusion that a good cutoff frequency is about 30 Hz and used a 10 kOhm resistor and a 0.47 uF capacitor to achieve that cutoff frequency.
 
