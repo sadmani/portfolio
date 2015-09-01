@@ -16,7 +16,9 @@ The goal of this project is create a prototype for a device that is portable and
 
 Contemporary methods for measuring the center of pressure are very expensive, bulky, and not robust. Throughout the summer with the aim of alleviating those issues. Though I did not get a chance to research a different avenue of this project that would be much less bulky and potentially more robust, it is still something that I wish to do further research and development on. The current prototype was developed by extracting sensors from an old bathroom scale, designing a circuit that would amplify the signal while protecting from environmental noise, center of pressure calculations, and a way to visualize this data for further analysis using serial communcation between Matlab and the PIC32.
 
-Click on this [link](https://vimeo.com/137880504) for a short demo video!
+Click on the picture above or the following [link](https://vimeo.com/137880504) for a short demo video!
+
+In this demo, you can see me first run the Matlab script that initiates serial communication with the PIC32, select a case to plot the x values as I move the weight on the prototype in realtime, and then plot the calculated coordinates for where I placed the weight in a certain timeframe- displayed on a rectangle that is scaled to represent my prototype. As you can see, the calculations were not perfect, but the strain gauge performed relatively well when you compare where I placed the weight and the calculated value.
 
 ###Project requirements:
 
