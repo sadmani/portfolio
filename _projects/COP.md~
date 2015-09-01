@@ -65,14 +65,14 @@ Before I began designing, I needed to establish a list of requirements that this
 
 	![alt text](http://i882.photobucket.com/albums/ac22/sadmani/homscale_zpsgidef5ww.jpeg "bathroom scale")
 
-3. **Make a simple prototype for use for testing sensors:**
+3. **Built test prototype:**
 
 	To start off, I made a simple test prototype so I could put more time towards getting the sensors that I extracted from the bathroom scale working with my own circuitry. Thus, I placed the strain guages at four corners of a rectangular 7"x10" plate, and then placed a similar rectangular piece on top.
  
 	Wires were connected to a small board, which had a ribbon cable connector. The ribbon cable led out of the prototype and attached directly to the breadboard that contained the PIC32.
 
 
-4. **Design external circuitry that will help utilize signal from new sensors:**
+4. **Design external circuitry for newly obtained sensors:**
 
 	![alt text](http://i882.photobucket.com/albums/ac22/sadmani/circuit_explained_zpsf9jbl7cs.png "circuit explained")
 
@@ -89,7 +89,7 @@ Before I began designing, I needed to establish a list of requirements that this
 
 	* Low-Pass Filter:
 
-		I used the [NSCOPE as a DAQ](http://hades.mech.northwestern.edu) so I could collect data from the sensors and then do some digital signal processing in Matlab. In particular, I tried to determine what frequency the noise was at and build low pass and bandpass filters in Matlab to look at the data before and after the signal processing.
+		I used the [nScope as a DAQ](http://hades.mech.northwestern.edu) so I could collect data from the sensors and then do some digital signal processing in Matlab. In particular, I tried to determine what frequency the noise was at and build low pass and bandpass filters in MATLAB to look at the data before and after the signal processing.
 
 		In the end, I came to the conclusion that a good cutoff frequency is about 30 Hz and used a 10 kOhm resistor and a 0.47 uF capacitor to achieve that cutoff frequency.
 
@@ -98,7 +98,7 @@ Before I began designing, I needed to establish a list of requirements that this
 
 	* Analog-to-Digital Converter (ADC):
 
-		The ADC on the PIC32 has 10 bits of resolution, which means that 3.3/2^{10} ≈ 3.2 mV per bit. There are two options for usng this data after the ADC converts the voltage values it reads into bits: either convert the values back into voltage or use the bit values to calibrate. Since I calibrated my strain guages by collecting data with the NSCOPE again and processing that data in Matlab, I needed to convert back into voltage so I could use the appropriate calibration equations.
+		The ADC on the PIC32 has 10 bits of resolution, which means that 3.3/2^{10} ≈ 3.2 mV per bit. There are two options for usng this data after the ADC converts the voltage values it reads into bits: either convert the values back into voltage or use the bit values to calibrate. Since I calibrated my strain guages by collecting data with the nScope again and processing that data in MATLAB, I needed to convert back into voltage so I could use the appropriate calibration equations.
 
 
 5. **Calculate the Center of Pressure:**
@@ -131,7 +131,7 @@ Before I began designing, I needed to establish a list of requirements that this
 
 ###Conclusions:
 
-Though the device definitely has room for improvement, it does do a pretty good job of locating the center of pressure. The disadvantages to the current prototype was that I wasn't able to get it down to a less bulky device in the timeframe, but that's definitely something that I would like to continue on my own. Overall, the project was an incredible learning experience- thanks so much to Professor Peshkin, Nick Marchuk, and Jarvis Schultz for their continuous advice!!!
+Though the device definitely has room for improvement, it does relatively well at locating the center of pressure. I was not able to get it down to a less bulky device in the timeframe, but that is definitely something that I would like to continue on my own. Overall, the project was an incredible learning experience- thanks so much to Professor Peshkin, Nick Marchuk, and Jarvis Schultz for their continuous advice!!!
 
 
 ![alt text](http://i882.photobucket.com/albums/ac22/sadmani/evolution_of_designs_zpshokeajiw.png "Final Prototype Evolution")
