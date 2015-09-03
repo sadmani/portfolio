@@ -18,7 +18,7 @@ Click on the picture below or the following [link](https://vimeo.com/137880504) 
 
 In this demo, you can see me first run the Matlab script that initiates serial communication with the PIC32, select a case to plot the x values as I move the weight on the prototype in realtime, and then plot the calculated coordinates for where I placed the weight in a certain timeframe- displayed on a rectangle that is scaled to represent my prototype. As you can see, the calculations were not perfect, but the strain gauge performed relatively well when you compare where I placed the weight and the calculated value.
 
-[![alt text](http://i882.photobucket.com/albums/ac22/sadmani/2015-08-31%2011.12.52_zpsuigfrudl.jpg)](https://vimeo.com/137880504)
+[![alt text](http://i882.photobucket.com/albums/ac22/sadmani/prototype_explained_zps9tpxuzf1.png)](https://vimeo.com/137880504)
 
 ###Project requirements:
 
