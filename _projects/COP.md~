@@ -74,7 +74,7 @@ Before I began designing, I needed to establish a list of requirements that this
 
 4. **Design external circuitry for newly obtained sensors:**
 
-	![alt text](http://i882.photobucket.com/albums/ac22/sadmani/circuit_explained_zpsf9jbl7cs.png "circuit explained")
+	![alt text](http://i882.photobucket.com/albums/ac22/sadmani/circuit_diagram_zpsnanr4izl.png?1441287653834&1441287654442 "circuit diagram")
 
 	
 	* Operational Amplifier (LM358):
@@ -95,10 +95,11 @@ Before I began designing, I needed to establish a list of requirements that this
 
 		![alt text](http://i882.photobucket.com/albums/ac22/sadmani/S1_no_weight_zpsxkgvpgr8.jpg "circuits") 
 	
-
 	* Analog-to-Digital Converter (ADC):
 
 		The ADC on the PIC32 has 10 bits of resolution, which means that 3.3/2^{10} ≈ 3.2 mV per bit. There are two options for usng this data after the ADC converts the voltage values it reads into bits: either convert the values back into voltage or use the bit values to calibrate. Since I calibrated my strain guages by collecting data with the nScope again and processing that data in MATLAB, I needed to convert back into voltage so I could use the appropriate calibration equations.
+
+		![alt text](http://i882.photobucket.com/albums/ac22/sadmani/circuit_explained_zpsf9jbl7cs.png "circuit explained")
 
 
 5. **Calculate the Center of Pressure:**
