@@ -16,7 +16,7 @@ Contemporary methods for measuring the center of pressure are very expensive, bu
 
 Click on the picture below or the following [link](https://vimeo.com/137880504) for a short demonstration video!
 
-In this demo, you can see me first run the Matlab script that initiates serial communication with the PIC32, select the case ('c') that will plot the (x,y) coordinates from COP that it receives from the PIC on a rectangle that is scaled to represent the foot plate prototype.
+In this video, you can see me first run the Matlab script that initiates serial communication with the PIC32, select the case ('c') that will plot the (x,y) coordinates from COP that it receives from the PIC on a rectangle that is scaled to represent the foot plate prototype.
 
 [![alt text](http://i882.photobucket.com/albums/ac22/sadmani/prototype_explained_zps9tpxuzf1.png)](https://vimeo.com/138239698)
 
@@ -26,10 +26,10 @@ Before I began designing, I needed to establish a list of requirements that this
 
 * **Durable:**
 
-	It should withstand a minimum about 6 months of every day use or be cheap and easy enough to replace over a smaller timespan
+	It should withstand a minimum about 6 months of every day use or be cheap and easy enough to replace over a smaller timespan.
 * **Accurate:**
 
-	Following the standards for accuracy of weight scales, the device should be accurate to 1% of the full scale reading; linearity, repeatability, and uncertainty of the sensor measurement all contribute to how accurate the device is
+	Following the standards for accuracy of weight scales, the device should be accurate to 1% of the full scale reading; linearity, repeatability, and uncertainty of the sensor measurement all contribute to how accurate the device is.
 * **Lightweight:**
 
 	It should not add so much weight that it changes the user's gait and it should also be comfortable to use.
