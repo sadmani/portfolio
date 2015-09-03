@@ -12,7 +12,7 @@ image: http://i882.photobucket.com/albums/ac22/sadmani/2015-08-31%2011.13.55_zps
 
 The goal of this project is create a prototype for a device that is portable and can measure the center of pressure of each foot throughout the gait cycle. Center of pressure (CoP) tells you where the ground reaction force vector is applied; the center of pressure is especially important for biomechanical applications because it can provide important information about posture and gait. CoP changes throughout the gait cycle, starting off at the heel during heel strike moving along the foot and ending at the toes during toe-off.
 
-Contemporary methods for measuring the center of pressure are very expensive, bulky, and not robust and the goal of this project is to develop a device that solves those problems. The current prototype was developed by extracting sensors from an old bathroom scale, designing a circuit that would amplify the signal while protecting from environmental noise, center of pressure calculations, and a way to visualize this data for further analysis using serial communcation between Matlab and the PIC32.
+Contemporary methods for measuring the center of pressure are very expensive, bulky, and not robust and the goal of this project is to develop a device that solves those problems. The current prototype was developed by extracting sensors from an old bathroom scale, designing a circuit that would amplify the signal while protecting from environmental noise, center of pressure calculations, and a way to visualize this data for further analysis using serial communication between Matlab and the PIC32.
 
 Click on the picture below or the following [link](https://vimeo.com/137880504) for a short demo video!
 
@@ -67,7 +67,7 @@ Before I began designing, I needed to establish a list of requirements that this
 
 3. **Built test prototype:**
 
-	To start off, I made a simple test prototype so I could put more time towards getting the sensors that I extracted from the bathroom scale working with my own circuitry. Thus, I placed the strain guages at four corners of a rectangular 7"x10" plate, and then placed a similar rectangular piece on top.
+	To start off, I made a simple test prototype so I could put more time towards getting the sensors that I extracted from the bathroom scale working with my own circuitry. Thus, I placed the strain gauges at four corners of a rectangular 7"x10" plate, and then placed a similar rectangular piece on top.
  
 	Wires were connected to a small board, which had a ribbon cable connector. The ribbon cable led out of the prototype and attached directly to the breadboard that contained the PIC32.
 
@@ -76,7 +76,7 @@ Before I began designing, I needed to establish a list of requirements that this
 
 	![alt text](http://i882.photobucket.com/albums/ac22/sadmani/circuit_diagram_zpsoatinigs.png?1441288772975&1441288773177 "circuit diagram")
 
-	Above is the circuit diagram for the external circuitry used to receive, amplify, and filter signals from the strain guage and send those enhanced signals to the PIC32 ADC. Below, I'll go through each of the components in more detail.
+	Above is the circuit diagram for the external circuitry used to receive, amplify, and filter signals from the strain gauge and send those enhanced signals to the PIC32 ADC. Below, I'll go through each of the components in more detail:
 	
 	* Operational Amplifier (LM358):
 
@@ -84,7 +84,7 @@ Before I began designing, I needed to establish a list of requirements that this
 
 	* Instrumentation Amplifier (AD623AN):
 
-		The strain guage output signal sits at a voltage of about half the voltage powering the circuit. However, the change in the signal when force is applied is barely detectable without any amplification. The instrumentation amplfier is therefore extremely important in the amplification of the signal so changes are easier to detect.
+		The strain gauge output signal sits at a voltage of about half the voltage powering the circuit. However, the change in the signal when force is applied is barely detectable without any amplification. The instrumentation amplifier is therefore extremely important in the amplification of the signal so changes are easier to detect.
 
 		However, the gain of the circuit must be chosen carefully in that too much amplification can lead to more noise in the circuit simply due to the amplification of it. Initially, I tried a gain of 1000, but that was outside of the recommended range for this particular chip and also amplified the noise in the signal significantly. I chose a gain of 400, which ended up working well.
 
@@ -98,7 +98,7 @@ Before I began designing, I needed to establish a list of requirements that this
 	
 	* Analog-to-Digital Converter (ADC):
 
-		The ADC on the PIC32 has 10 bits of resolution, which means that 3.3/2^{10} ≈ 3.2 mV per bit. There are two options for usng this data after the ADC converts the voltage values it reads into bits: either convert the values back into voltage or use the bit values to calibrate. Since I calibrated my strain guages by collecting data with the nScope again and processing that data in MATLAB, I needed to convert back into voltage so I could use the appropriate calibration equations.
+		The ADC on the PIC32 has 10 bits of resolution, which means that 3.3/2^{10} ≈ 3.2 mV per bit. There are two options for usng this data after the ADC converts the voltage values it reads into bits: either convert the values back into voltage or use the bit values to calibrate. Since I calibrated my strain gauges by collecting data with the nScope again and processing that data in MATLAB, I needed to convert back into voltage so I could use the appropriate calibration equations.
 
 		![alt text](http://i882.photobucket.com/albums/ac22/sadmani/circuit_explained_zpsf9jbl7cs.png "circuit explained")
 
@@ -118,7 +118,7 @@ Before I began designing, I needed to establish a list of requirements that this
 
 	* Physical Device:
 
-		Through using the initial prototype, I learned a lot about improvements that needed to be made. First of all, I needed to keep my external circuitry as close to the strain guages as possible so as to shorten wire length and eliminate opportunities for noise. To solve this problem, I soldered four independent circuits (a sample shown below) and placed them in their own compartment on the prototype.
+		Through using the initial prototype, I learned a lot about improvements that needed to be made. First of all, I needed to keep my external circuitry as close to the strain gauges as possible so as to shorten wire length and eliminate opportunities for noise. To solve this problem, I soldered four independent circuits (a sample shown below) and placed them in their own compartment on the prototype.
 
 		![alt text](http://i882.photobucket.com/albums/ac22/sadmani/2015-08-31%2011.13.23_zpsgemkwws0.jpg "circuits") 
 
