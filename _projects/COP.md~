@@ -14,11 +14,11 @@ The goal of this project is create a prototype for a device that is portable and
 
 Contemporary methods for measuring the center of pressure are very expensive, bulky, and not robust and the goal of this project is to develop a device that solves those problems. The current prototype was developed by extracting sensors from an old bathroom scale, designing a circuit that would amplify the signal while protecting from environmental noise, center of pressure calculations, and a way to visualize this data for further analysis using serial communication between Matlab and the PIC32.
 
-Click on the picture below or the following [link](https://vimeo.com/137880504) for a short demo video!
+Click on the picture below or the following [link](https://vimeo.com/137880504) for a short demonstration video!
 
-In this demo, you can see me first run the Matlab script that initiates serial communication with the PIC32, select a case to plot the x values as I move the weight on the prototype in realtime, and then plot the calculated coordinates for where I placed the weight in a certain timeframe- displayed on a rectangle that is scaled to represent my prototype. As you can see, the calculations were not perfect, but the strain gauge performed relatively well when you compare where I placed the weight and the calculated value.
+In this demo, you can see me first run the Matlab script that initiates serial communication with the PIC32, select the case ('c') that will plot the (x,y) coordinates from COP that it receives from the PIC on a rectangle that is scaled to represent the foot plate prototype.
 
-[![alt text](http://i882.photobucket.com/albums/ac22/sadmani/prototype_explained_zps9tpxuzf1.png)](https://vimeo.com/137880504)
+[![alt text](http://i882.photobucket.com/albums/ac22/sadmani/prototype_explained_zps9tpxuzf1.png)](https://vimeo.com/138239698)
 
 ###Project requirements:
 
@@ -120,8 +120,6 @@ Before I began designing, I needed to establish a list of requirements that this
 
 		Through using the initial prototype, I learned a lot about improvements that needed to be made. First of all, I needed to keep my external circuitry as close to the strain gauges as possible so as to shorten wire length and eliminate opportunities for noise. To solve this problem, I soldered four independent circuits (a sample shown below) and placed them in their own compartment on the prototype.
 
-		![alt text](http://i882.photobucket.com/albums/ac22/sadmani/2015-08-31%2011.13.23_zpsgemkwws0.jpg "circuits") 
-
 		Next, when a force was applied to the top plate of the initial prototype, the top plate flexed, indicating that the strain gauges were not reading all of the force that was applied. To fix this, I put thin beams along one of the plates (with space for the circuits), and a matching plate on top. This now serves as a compartment for the electronics as well as a more stiff top plate for the device. The compartment sits on top of the strain gauges, that are mounted to a lower plate in the same way as described before.
 
 		I made this new design in wood once again and, once I verified that it worked significantly better than the initial prototype, I laser cut the final prototype using acrylic. I used 0.25" thick acrylic for the plates and 0.125" acrylic for the beams.
@@ -131,9 +129,8 @@ Before I began designing, I needed to establish a list of requirements that this
 		I updated the code to send an (x,y) coordinate from the PIC to Matlab each time is was prompted to do so by Matlab (every half second). This code was then use to plot in real-time x or y values vs. time and then a visual plot of where the COP was on the plate (an image of a plate) so you can see where you pressed during collection. This is reflected in the video!
 
 
+![alt text](http://i882.photobucket.com/albums/ac22/sadmani/evolution_of_designs_zpshokeajiw.png "Final Prototype Evolution")
+
 ###Conclusions:
 
 Though the device definitely has room for improvement, it does relatively well at locating the center of pressure. I was not able to get it down to a less bulky device in the timeframe, but that is definitely something that I would like to continue on my own. Overall, the project was an incredible learning experience- thanks so much to Professor Peshkin, Nick Marchuk, and Jarvis Schultz for their continuous advice!!!
-
-
-![alt text](http://i882.photobucket.com/albums/ac22/sadmani/evolution_of_designs_zpshokeajiw.png "Final Prototype Evolution")
