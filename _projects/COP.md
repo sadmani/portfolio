@@ -14,9 +14,7 @@ The goal of this project is create a prototype for a device that is portable and
 
 Contemporary methods for measuring the center of pressure are very expensive, bulky, and not robust and the goal of this project is to develop a device that solves those problems. The current prototype was developed by extracting sensors from an old bathroom scale, designing a circuit that would amplify the signal while protecting from environmental noise, center of pressure calculations, and a way to visualize this data for further analysis using serial communication between Matlab and the PIC32.
 
-Click on the picture below or the following [link](https://vimeo.com/138239698) for a short demonstration video!
-
-In this video, you can see me first run the Matlab script that initiates serial communication with the PIC32, select the case ('c') that will plot the (X,Y) coordinates from COP that it receives from the PIC on a rectangle that is scaled to represent the foot plate prototype.
+Click on the picture below for a short demonstration video! In this video, you can see me first run the Matlab script that initiates serial communication with the PIC32, select the case ('c') that will plot the (X,Y) coordinates from COP that it receives from the PIC on a rectangle that is scaled to represent the foot plate prototype.
 
 [![alt text](http://i882.photobucket.com/albums/ac22/sadmani/prototype_explained_zps9tpxuzf1.png)](https://vimeo.com/138239698)
 
