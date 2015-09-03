@@ -74,7 +74,7 @@ Before I began designing, I needed to establish a list of requirements that this
 
 4. **Design external circuitry for newly obtained sensors:**
 
-	![alt text](http://i882.photobucket.com/albums/ac22/sadmani/circuit_diagram_zpsnanr4izl.png?1441287653834&1441287654442 "circuit diagram")
+	![alt text](http://i882.photobucket.com/albums/ac22/sadmani/circuit_diagram_zpsoatinigs.png?1441288772975&1441288773177 "circuit diagram")
 
 	Above is the circuit diagram for the external circuitry used to receive, amplify, and filter signals from the strain guage and send those enhanced signals to the PIC32 ADC. Below, I'll go through each of the components in more detail.
 	
