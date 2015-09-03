@@ -14,9 +14,9 @@ The goal of this project is create a prototype for a device that is portable and
 
 Contemporary methods for measuring the center of pressure are very expensive, bulky, and not robust and the goal of this project is to develop a device that solves those problems. The current prototype was developed by extracting sensors from an old bathroom scale, designing a circuit that would amplify the signal while protecting from environmental noise, center of pressure calculations, and a way to visualize this data for further analysis using serial communication between Matlab and the PIC32.
 
-Click on the picture below or the following [link](https://vimeo.com/137880504) for a short demonstration video!
+Click on the picture below or the following [link](https://vimeo.com/138239698) for a short demonstration video!
 
-In this demo, you can see me first run the Matlab script that initiates serial communication with the PIC32, select the case ('c') that will plot the (x,y) coordinates from COP that it receives from the PIC on a rectangle that is scaled to represent the foot plate prototype.
+In this video, you can see me first run the Matlab script that initiates serial communication with the PIC32, select the case ('c') that will plot the (x,y) coordinates from COP that it receives from the PIC on a rectangle that is scaled to represent the foot plate prototype.
 
 [![alt text](http://i882.photobucket.com/albums/ac22/sadmani/prototype_explained_zps9tpxuzf1.png)](https://vimeo.com/138239698)
 
@@ -26,10 +26,10 @@ Before I began designing, I needed to establish a list of requirements that this
 
 * **Durable:**
 
-	It should withstand a minimum about 6 months of every day use or be cheap and easy enough to replace over a smaller timespan
+	It should withstand a minimum about 6 months of every day use or be cheap and easy enough to replace over a smaller timespan.
 * **Accurate:**
 
-	Following the standards for accuracy of weight scales, the device should be accurate to 1% of the full scale reading; linearity, repeatability, and uncertainty of the sensor measurement all contribute to how accurate the device is
+	Following the standards for accuracy of weight scales, the device should be accurate to 1% of the full scale reading; linearity, repeatability, and uncertainty of the sensor measurement all contribute to how accurate the device is.
 * **Lightweight:**
 
 	It should not add so much weight that it changes the user's gait and it should also be comfortable to use.
@@ -76,7 +76,7 @@ Before I began designing, I needed to establish a list of requirements that this
 
 	![alt text](http://i882.photobucket.com/albums/ac22/sadmani/circuit_diagram_zpsoatinigs.png?1441288772975&1441288773177 "circuit diagram")
 
-	Above is the circuit diagram for the external circuitry used to receive, amplify, and filter signals from the strain gauge and send those enhanced signals to the PIC32 ADC. Below, I'll go through each of the components in more detail:
+	Above is the circuit diagram for the external circuitry used to receive, amplify, and filter signals from the strain gauge and send those enhanced signals to the PIC32 ADC. There is one of these circuits for each of the strain gauges. Below, I'll go through each of the components in more detail:
 	
 	* Operational Amplifier (LM358):
 
